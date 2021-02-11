@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Связатся с нами</title>
+    <!-- @include "prehead.html" -->
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page">
+      <!-- @include "header.html" -->
+      <section class="section section-lg oh">
+        <div class="row">
+            <div class="container">
+              <div class="section-lg">
+                <h3 class="wow-outer"><span class="wow slideInDown">Свяжитесь с нами</span></h3>
+                <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                  <div class="row row-10">
+                    <div class="col-md-6 wow-outer">
+                      <div class="form-wrap wow fadeSlideInUp">
+                        <label class="form-label-outside" for="contact-first-name">Имя</label>
+                        <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
+                      </div>
+                    </div>
+                    <div class="col-md-6 wow-outer">
+                      <div class="form-wrap wow fadeSlideInUp">
+                        <label class="form-label-outside" for="contact-last-name">Фамилия</label>
+                        <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
+                      </div>
+                    </div>
+                    <div class="col-md-6 wow-outer">
+                      <div class="form-wrap wow fadeSlideInUp">
+                        <label class="form-label-outside" for="contact-email">Эл. почта</label>
+                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                      </div>
+                    </div>
+                    <div class="col-md-6 wow-outer">
+                      <div class="form-wrap wow fadeSlideInUp">
+                        <label class="form-label-outside" for="contact-phone">Телефон</label>
+                        <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber">
+                      </div>
+                    </div>
+                    <div class="col-12 wow-outer">
+                      <div class="form-wrap wow fadeSlideInUp">
+                        <label class="form-label-outside" for="contact-message">Ваше сообщение</label>
+                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group group-middle">
+                    <div class="wow-outer">
+                      <button class="button button-primary button-winona wow slideInRight" type="submit">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+      <!-- @include "footer.html" -->
+    </div>
+    <!-- @include "pageloader.html"--> 
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#nav-portfolio").addClass("active");
+      });
+    </script>
+  </body>
+</html>

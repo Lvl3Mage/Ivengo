@@ -1,0 +1,11 @@
+@mixin flexbox() {display:-webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;/*font-size:0;*/}
+@mixin flexboxinline(){display: -webkit-inline-flex;display: -mox-inline-flex;display: -ms-inline-flex;display: -o-inline-flex;display: inline-flex;}
+@mixin fSize($wmax, $wmin, $fmax, $fmin){
+	font-size: calc((100vw - #{$wmin}px)/(#{$wmax} - #{$wmin})*(#{$fmax} - #{$fmin}) + #{$fmin}px);
+	@media screen and (min-width: #{$wmax}px) {
+		font-size: #{$fmax}px;
+	}
+	@media screen and (max-width: #{$wmin}px) {
+		font-size: #{$fmin}px;
+	}
+}
