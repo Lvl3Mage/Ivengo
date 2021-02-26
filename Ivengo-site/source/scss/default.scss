@@ -272,3 +272,87 @@
   		}
 	}
 }
+.contact-form-modal{
+	margin-top: 10vh !important;
+	width: 60%;
+	@media screen and (max-width: 776px){
+		width: 80%;
+	}
+	@media screen and (max-width: 576px){
+		width: 90%;
+	}
+
+}
+.contact-form-content{
+	overflow-y: scroll !important;
+	display: grid;
+	grid-template-rows: 1fr 2fr 16fr 1fr;
+	grid-template-columns: 3fr 40fr 3fr;
+
+	@media screen and (max-width: 776px){
+		grid-template-columns: 3fr 50fr 3fr;
+	}
+	@media screen and (max-width: 576px){
+		grid-template-columns: 3fr 70fr 3fr;
+	}
+}
+.contact-form-inputs{
+	grid-column: 2 / span 1;
+	grid-row: 3 / span 1;
+	display: grid;
+	grid-template-rows: 1fr 1fr auto 1fr;
+	grid-template-columns: 1fr 1fr;
+
+	@media screen and (max-width: 776px){
+		grid-template-rows: 1fr 1fr 1fr 1fr auto 1fr;
+		grid-template-columns: 1fr;
+	}
+	@media screen and (max-width: 576px){
+		grid-template-rows: 1fr 1fr 1fr 1fr auto 1fr;
+	}
+}
+.contact-form-block{
+	&_header{
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+	}
+	&_input-field{
+		@include fSize(1200,400,20,14);
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	&_send-button{
+		grid-column: span 2;
+		grid-row: 4 / span 1;
+		@media screen and (max-width: 776px){
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+	}
+	&_input-description-field{
+		overflow: hidden;
+		grid-column: span 2;
+		grid-row: 3 / span 1;
+		@media screen and (max-width: 776px){
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+	}
+}
+.input-form{
+	@media screen and (max-width: 776px){
+		margin-bottom: 4px;
+	}
+	
+}
+.contact-input-field{
+	height: 100%;
+	&_description{
+		line-height: 1.2;
+		resize: none;
+		overflow-y: scroll;
+		@media screen and (max-width: 776px){
+			line-height: 1;
+		}
+	}
+}

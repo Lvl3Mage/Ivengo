@@ -458,7 +458,7 @@
                 </tr> -->
               </table>
               <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>5000</p>  
-              <a class="button button-primary button-winona" href="single-product.html">Узнать больше</a>
+              <a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
             </article>
             <!-- Corporate website -->
             <article class="pricing-modern wow fadeInLeft d-flex flex-column justify-content-around py-3" data-wow-delay=".05s">
@@ -481,7 +481,7 @@
                   <td>Описание услуги</td>
                 </tr> -->
               </table>
-              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winona" href="single-product.html">Узнать больше</a>
+              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
             </article>
             <!-- Pricing Modern-->
             <article class="pricing-modern wow fadeInLeft d-flex flex-column justify-content-around py-3" data-wow-delay=".1s">
@@ -504,7 +504,7 @@
                   <td>Описание услуги</td>
                 </tr> -->
               </table>
-              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>30,000</p><a class="button button-primary button-winona" href="single-product.html">Узнать больше</a>
+              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>30,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
             </article>
             <!-- Pricing Modern-->
             <article class="pricing-modern wow fadeInLeft d-flex flex-column justify-content-around py-3" data-wow-delay=".15s">
@@ -527,11 +527,115 @@
                   <td>Описание услуги</td>
                 </tr> -->
               </table>
-              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winona" href="single-product.html">Узнать больше</a>
+              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
             </article>
           </div>
         </div>
       </section>
+      <section class="text-center">
+        <!-- Modal -->
+        <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="contactFormLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl contact-form-modal">
+            <div class="modal-content contact-form-content">
+              <div class="contact-form-block contact-form-block_header"> <h3>Напишите нам</h3> </div>
+              <div class="contact-form-inputs"> 
+                <div class="contact-form-block contact-form-block_input-field">
+                  <div class="form-group input-form">
+                    <label for="exampleInputEmail1">Имя </label>
+                    <input type="name" class="form-control contact-input-field" id="input-name" aria-describedby="emailHelp" placeholder="Имя">
+                  </div>
+                </div>
+                <div class="contact-form-block contact-form-block_input-field">
+                  <div class="form-group input-form">
+                    <label for="exampleInputEmail1">Адрес электронной почты</label>
+                    <input type="email" class="form-control contact-input-field" id="input-email" aria-describedby="emailHelp" placeholder="Электронная почта">
+                  </div>
+                </div>
+                <div class="contact-form-block contact-form-block_input-field">
+                  <div class="form-group input-form">
+                    <label for="exampleInputEmail1">Телефоный номер</label>
+                    <input type="tel" class="form-control contact-input-field" id="input-phone-number" aria-describedby="phoneHelp" placeholder="Телефон">
+                  </div>
+                </div>
+                <div class="contact-form-block contact-form-block_input-field">
+                  <div class="form-group input-form">
+                    <label for="exampleInputEmail1">Выбирите услугу</label>
+                    <select class="form-control form-control-sm">
+                      <option>Услуга 1</option>
+                      <option>Услуга 2</option>
+                      <option>Услуга 3</option>
+                      <option>Услуга 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="contact-form-block contact-form-block_input-description-field">
+                  <div class="form-group input-form">
+                    <label for="exampleInputEmail1">Дополнительное сообщение</label>
+                    <textarea class="form-control contact-input-field contact-input-field_description" id="input-description" rows="6">
+                      
+                    </textarea>
+                  </div>
+                </div>
+                <div class="contact-form-block contact-form-block_send-button">
+                  <a class="button button-primary button-winona" href="">Отправить</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- <form>
+                  
+                  <div class="form-outline text-left mb-2">
+                    <label class="form-label text-light" for="formNombre">Nombre</label>
+                    <input type="text" id="formNombre" class="form-control"/>
+                  </div>
+
+                 
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-outline text-left mb-2">
+                        <label class="form-label text-light" for="formTel">Número de teléfono</label>
+                        <input type="tel" id="formTel" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-outline mb-2 text-left">
+                        <label class="form-label text-light" for="formCorreo">Correo electronico</label>
+                        <input type="email" id="formCorreo" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-outline text-left mb-2">
+                        <label class="form-label text-light" for="formFecha">Fecha preferida</label>
+                        <input type="date" id="formFecha" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-outline mb-2 text-left">
+                        <label class="form-label text-light" for="formHora">Hora (aproximadamente)</label>
+                        <input type="time" id="formHora" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                    <label class="form-check-label" for="form4Example4">
+                      Send me a copy of this message
+                    </label>
+                  </div>
+
+                  
+                  <button type="submit" class="btn btn-rounded btn-purple-2 wow fadeIn text-white bg-secondary" data-wow-delay="0.2s">
+                    Reservar
+                  </button>
+                </form> -->
       <!-- Wide CTA-->
       <!-- <section class="section section-md bg-primary-darker text-center">
         <div class="container">
