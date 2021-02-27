@@ -357,7 +357,7 @@
                 </tr> -->
               </table>
               <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>5000</p>  
-              <a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
+              <a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm" data-service="1">Узнать больше</a>
             </article>
             <!-- Corporate website -->
             <article class="pricing-modern wow fadeInLeft d-flex flex-column justify-content-around py-3" data-wow-delay=".05s">
@@ -380,7 +380,7 @@
                   <td>Описание услуги</td>
                 </tr> -->
               </table>
-              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
+              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm" data-service="2">Узнать больше</a>
             </article>
             <!-- Pricing Modern-->
             <article class="pricing-modern wow fadeInLeft d-flex flex-column justify-content-around py-3" data-wow-delay=".1s">
@@ -403,7 +403,7 @@
                   <td>Описание услуги</td>
                 </tr> -->
               </table>
-              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>30,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
+              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>30,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm" data-service="3">Узнать больше</a>
             </article>
             <!-- Pricing Modern-->
             <article class="pricing-modern wow fadeInLeft d-flex flex-column justify-content-around py-3" data-wow-delay=".15s">
@@ -426,7 +426,7 @@
                   <td>Описание услуги</td>
                 </tr> -->
               </table>
-              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm">Узнать больше</a>
+              <p class="pricing-modern-price">от <span class="pricing-modern-price-currency">₽</span>25,000</p><a class="button button-primary button-winonawow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#contactForm" data-service="4">Узнать больше</a>
             </article>
           </div>
         </div>
@@ -434,6 +434,7 @@
       <section class="text-center">
         <!-- Modal -->
         <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="contactFormLabel" aria-hidden="true">
+          <div class="contact-form-bg-image" style="background-image: url(images/working-space.jpg);" data-dismiss="modal"></div>
           <div class="modal-dialog modal-dialog-scrollable modal-xl contact-form-modal">
             <div class="modal-content contact-form-content">
               <div class="contact-form-block contact-form-block_header"> <h3>Напишите нам</h3> </div>
@@ -447,32 +448,30 @@
                 <div class="contact-form-block contact-form-block_input-field">
                   <div class="form-group input-form">
                     <label for="exampleInputEmail1">Адрес электронной почты</label>
-                    <input type="email" class="form-control contact-input-field" id="input-email" aria-describedby="emailHelp" placeholder="Электронная почта">
+                    <input type="email" class="form-control contact-input-field" id="input-email" aria-describedby="emailHelp" placeholder="example@example.com">
                   </div>
                 </div>
                 <div class="contact-form-block contact-form-block_input-field">
                   <div class="form-group input-form">
                     <label for="exampleInputEmail1">Телефоный номер</label>
-                    <input type="tel" class="form-control contact-input-field" id="input-phone-number" aria-describedby="phoneHelp" placeholder="Телефон">
+                    <input type="tel" class="form-control contact-input-field" id="input-phone-number" aria-describedby="phoneHelp" placeholder="(xxx)-xxx-xx-xx">
                   </div>
                 </div>
                 <div class="contact-form-block contact-form-block_input-field">
                   <div class="form-group input-form">
-                    <label for="exampleInputEmail1">Выбирите услугу</label>
-                    <select class="form-control form-control-sm">
-                      <option>Услуга 1</option>
-                      <option>Услуга 2</option>
-                      <option>Услуга 3</option>
-                      <option>Услуга 4</option>
+                    <label for="exampleInputEmail1">Выберите услугу</label>
+                    <select class="form-control form-control-sm" id="service_selector">
+                      <option value="1">Создание лендинга</option>
+                      <option value="2">Создание сайта компании</option>
+                      <option value="3">Создание сайта для интернет-магазина</option>
+                      <option value="4">Создание мини-игр</option>
                     </select>
                   </div>
                 </div>
                 <div class="contact-form-block contact-form-block_input-description-field">
                   <div class="form-group input-form">
                     <label for="exampleInputEmail1">Дополнительное сообщение</label>
-                    <textarea class="form-control contact-input-field contact-input-field_description" id="input-description" rows="6">
-                      
-                    </textarea>
+                    <textarea class="form-control contact-input-field contact-input-field_description" id="input-description" rows="6" placeholder="Хотите еще что-то добавить?"></textarea>
                   </div>
                 </div>
                 <div class="contact-form-block contact-form-block_send-button">
@@ -640,6 +639,15 @@
       $(document).ready(function() {
         $("#nav-main").addClass("active");
       });
+    </script>
+    <script>
+      $('#contactForm').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var service = button.data('service') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        $("#service_selector").val(service);
+      })
     </script>
   </body>
 </html>
