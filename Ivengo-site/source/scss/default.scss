@@ -371,6 +371,20 @@
 		}
 	}
 }
-
+.team-profile{
+  padding: 0 10px;
+  flex: 0 0 33%; 
+}
+@media screen and (max-width: 1200px) {
+  .team-profile{
+    flex: 0 0 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .team-profile{
+    flex: 0 0 100%;
+    padding: 0 20px;
+  }
+}
 
 @import "single-project.scss";
